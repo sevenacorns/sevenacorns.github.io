@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if IE 8]>               <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      div.container {
+        padding-bottom: 40px;
+      }
+      svg {
+        width: 100%;
+        height: 240px;
+        margin: 0 auto;
+      }
+      h1 {
+        padding-top: 0px;
+        font-size: 6.048em;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+      }
+      @media only screen and (max-width: 550px) {
+        h1 {
+          padding-top: 50px;
+          font-size: 4.48em;
+        }
+      }
+      @media only screen and (max-width: 330px) {
+        h1 {
+          padding-top: 20px;
+          margin-bottom: 4px;
+          font-size: 2.857em;
+        }
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        
+        var fix_margin = function() {
+          $container = $('div.container');
+          if($container.height() + 60 > $(window).height()) {
+            $container.css('margin-top', 30);
+          } else {
+            $('div.container').css('margin-top', ($(window).height() - $('div.container').height()) / 2);      
+          }
+        }
+        
+        fix_margin();
+        $(window).resize(fix_margin);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <svg version="1.1" baseProfile="basic" id="Ebene_1"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="2000px" height="2000px"
+             viewBox="0 0 2000 2000" xml:space="preserve">
+          <g>
+            <path d="M1697.785,1054.63c-58.064,10.254-133.838,3.072-219.721-5.414c-135.611-13.139-304.344-29.474-461.209,19.419
+              c-156.865,48.967-285.975,160.061-389.805,247.997c-64.762,54.715-121.423,103.872-174.501,129.292
+              c100.12,235.805,387.715,657.953,844.72,515.315C1734.805,1824.724,1746.562,1305.668,1697.785,1054.63z M1186.198,1842.005
+              c-201.712,46.98-402.086-71.154-452.281-261.814c-25.274-53.091-10.241-118.403,38.822-154.47
+              c55.792-40.734,133.766-28.685,174.617,26.827c17.794,24.126,25.696,52.7,24.126,80.347
+              c42.66,149.299,175.644,251.496,328.316,264.305C1265.542,1817.537,1227.287,1832.472,1186.198,1842.005z"/>
+            <g>
+              <path d="M887.066,329.578c-38.155-86.028-55.016-181.883-44.676-281.483l-179.438,76.789L470.094,10
+                c-16.004,157.488,36.989,307.803,135.343,422.008c58.449-30.548,121.482-56.635,188.476-77.443
+                C825.103,344.788,856.134,336.44,887.066,329.578z"/>
+            </g>
+            <g>
+              <path d="M923.616,398.924c-34.808,7.363-70.721,16.639-107.124,27.841c-55.633,17.556-107.563,38.089-155.625,61.585
+                c-326.979,158.814-471.213,448.358-371.166,768.92c45.88,146.122,89.341,134.193,112.537,126.788l0,0
+                c7.333-2.249,15.479-5.867,23.644-9.997c41.853-21.622,93.44-66.292,151.628-115.765
+                c109.409-92.408,244.806-208.996,416.557-262.467c171.598-53.5,348.948-36.2,491.427-22.372
+                c77.985,7.578,146.979,14.061,193.897,6.869c7.675-1.099,14.959-2.694,21.484-4.681c23.149-7.29,66.229-20.74,20.568-166.728
+                C1616.255,471.747,1309.076,317.803,923.616,398.924z"/>
+            </g>
+          </g>
+          </svg>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>seven acorns</h1>
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
